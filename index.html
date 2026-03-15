@@ -47,6 +47,20 @@
     .social-btn { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.55rem 1rem; border: 1px solid var(--ink); font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); text-decoration: none; transition: background 0.2s, color 0.2s; }
     .social-btn:hover { background: var(--ink); color: #fff; }
 
+    /* ── PORTFOLIO NOTE ── */
+    .portfolio-note { background: var(--paper-alt); padding: 3rem; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+    .note-inner { display: flex; align-items: flex-start; gap: 1.5rem; background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--accent); padding: 2rem 2.25rem; max-width: 1140px; margin: 0 auto; }
+    .note-icon { font-size: 1.25rem; color: var(--accent); margin-top: 0.15rem; flex-shrink: 0; }
+    .note-body { flex: 1; }
+    .note-title { font-family: var(--serif); font-size: 1.15rem; font-weight: 700; color: var(--ink); margin-bottom: 0.6rem; }
+    .note-desc { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.8; margin-bottom: 1.25rem; }
+    .note-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .note-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.55rem 1.25rem; font-family: var(--sans); font-size: 0.84rem; font-weight: 500; text-decoration: none; transition: background 0.2s, color 0.2s, border-color 0.2s; }
+    .note-btn-primary { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+    .note-btn-primary:hover { background: #122a42; border-color: #122a42; }
+    .note-btn-secondary { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+    .note-btn-secondary:hover { background: var(--ink); color: #fff; }
+
     section { padding: 6rem 0; }
     .container { max-width: 1140px; margin: 0 auto; padding: 0 3rem; }
     .s-label { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-warm); margin-bottom: 0.6rem; }
@@ -127,6 +141,8 @@
       .proj-grid { grid-template-columns: 1fr 1fr; }
       .two-col { grid-template-columns: 1fr; gap: 3rem; }
       footer { flex-direction: column; align-items: flex-start; }
+      .portfolio-note { padding: 2rem 1.5rem; }
+      .note-inner { flex-direction: column; gap: 1rem; }
     }
     @media (max-width: 600px) {
       .proj-grid { grid-template-columns: 1fr; }
@@ -165,9 +181,9 @@
     <div class="hero-right">
       <div class="stat-grid fi">
         <div class="stat-card"><div class="stat-num">5+</div><div class="stat-lbl">Years experience</div></div>
-        <div class="stat-card"><div class="stat-num">30+</div><div class="stat-lbl">REST APIs integrated</div></div>
-        <div class="stat-card"><div class="stat-num">6</div><div class="stat-lbl">Project domains</div></div>
-        <div class="stat-card"><div class="stat-num">5+</div><div class="stat-lbl">AI methods applied</div></div>
+        <div class="stat-card"><div class="stat-num">50+</div><div class="stat-lbl">Web projects</div></div>
+        <div class="stat-card"><div class="stat-num">30+</div><div class="stat-lbl">IoT projects</div></div>
+        <div class="stat-card"><div class="stat-num">20+</div><div class="stat-lbl">AI & expert systems</div></div>
       </div>
       <div class="socials-row fi">
         <a href="https://github.com/irman0maulana" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -177,6 +193,24 @@
       </div>
     </div>
   </section>
+
+  <!-- PORTFOLIO NOTE -->
+  <div class="portfolio-note">
+    <div class="note-inner">
+      <div class="note-icon"><i class="fa-solid fa-lock"></i></div>
+      <div class="note-body">
+        <div class="note-title">Portofolio Project</div>
+        <p class="note-desc">
+          Seluruh project yang telah dikerjakan — mencakup 50+ aplikasi web, 30+ sistem IoT, dan 20+ sistem AI & pakar — bersifat rahasia dan merupakan milik eksklusif klien serta perusahaan terkait.
+          Detail project dapat didiskusikan secara langsung melalui sesi konsultasi privat.
+        </p>
+        <div class="note-actions">
+          <a href="mailto:irman0maulana@gmail.com" class="note-btn note-btn-primary"><i class="fa-regular fa-envelope"></i> Diskusi via Email</a>
+          <a href="https://wa.me/6285217553747" class="note-btn note-btn-secondary" target="_blank"><i class="fa-brands fa-whatsapp"></i> Hubungi via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- PROFILE -->
   <section id="profile">
@@ -266,6 +300,20 @@
               <li>Menyusun dokumentasi program dan alur sistem</li>
               <li>Memperbaiki & melakukan maintenance sistem yang sudah ada</li>
               <li>Optimisasi kode & performa backend untuk efisiensi sistem</li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-period">2026</div>
+          <div>
+            <div class="exp-company">Bale Atikan Nararya</div>
+            <div class="exp-role">Admin Officer</div>
+            <ul class="exp-points">
+              <li>Memberikan dukungan teknis berbasis IT kepada 25 Field Coordinator untuk memastikan kelancaran operasional lapangan</li>
+              <li>Mengelola dan mengoptimalkan penjadwalan 11 akun Zoom secara terpusat guna mencegah konflik jadwal antar Field Coordinator</li>
+              <li>Melakukan monitoring dan evaluasi pencapaian target bulanan terhadap 25 Field Coordinator sebagai bahan pelaporan manajemen</li>
+              <li>Merancang dan mengimplementasikan sistem manajemen distribusi akun Zoom untuk meningkatkan efisiensi koordinasi tim lapangan</li>
+              <li>Melakukan pencatatan, verifikasi, dan rekapitulasi laporan keuangan setiap akhir bulan sesuai standar pelaporan yang berlaku</li>
             </ul>
           </div>
         </div>
